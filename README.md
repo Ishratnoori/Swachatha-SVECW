@@ -1,70 +1,111 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# Swachhata@SVECW
 
-### `npm start`
+**Swachhata@SVECW** is a web platform aimed at promoting cleanliness on the campus of Shri Vishnu Engineering College for Women. The platform enables students to report cleanliness issues, track the status of their complaints, and contribute to creating a cleaner and healthier environment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Report Issues**: Upload photos and details of unclean areas or overflowing dustbins.
+- **Track Complaints**: View the status and progress of reported issues.
+- **Feedback & Suggestions**: Share ideas for improving campus cleanliness.
+- **Profile Management**: Manage user accounts and personalize experiences.
+- **Notifications**: Stay updated on the status of complaints and general announcements.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js
+- **Backend**: Node.js
+- **Database**: MongoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Folder Structure
 
-### `npm run eject`
+```
+swachhata-svecw/
+├── public/               # Static files
+│   ├── index.html        # Main HTML file
+│   ├── favicon.ico       # App icon
+│   └── assets/           # Other static assets (e.g., images, logos)
+├── src/                  # Source code
+│   ├── components/       # Reusable components
+│   ├── pages/            # Page components (e.g., Dashboard, Report Issue)
+│   ├── services/         # API service handlers
+│   ├── utils/            # Utility/helper functions
+│   ├── App.js            # Main app component
+│   ├── index.js          # React application entry point
+│   └── styles/           # CSS and styling files
+├── .env                  # Environment variables
+├── package.json          # Project dependencies
+├── README.md             # Project documentation
+├── .gitignore            # Git ignore file
+└── node_modules/         # Installed dependencies (auto-generated)
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Follow these steps to set up the project locally:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/swachhata-svecw.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd swachhata-svecw
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We welcome contributions to improve **Swachhata@SVECW**. To contribute:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add feature description"
+   ```
+4. Push the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For any queries or feedback, feel free to contact:
+- **Email**: ishratnoori18@gmail.com
+- **LinkedIn**:(https://www.linkedin.com/in/ishrat-noori-4b3b70254)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
