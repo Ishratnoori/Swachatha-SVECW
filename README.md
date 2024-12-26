@@ -1,7 +1,12 @@
-```markdown
+
+
+---
+
 # Swachhata@SVECW
 
-Swachhata@SVECW is a web platform aimed at promoting cleanliness and sanitation on the campus of Shri Vishnu Engineering College for Women. The platform enables students to report cleanliness issues, track the status of their complaints, and contribute to creating a cleaner and healthier environment.
+**Swachhata@SVECW** is a web platform aimed at promoting cleanliness and sanitation on the campus of Shri Vishnu Engineering College for Women. The platform enables students to report cleanliness issues, track the status of their complaints, and contribute to creating a cleaner and healthier environment.
+
+---
 
 ## Features
 
@@ -11,36 +16,44 @@ Swachhata@SVECW is a web platform aimed at promoting cleanliness and sanitation 
 - **Profile Management**: Manage user accounts and personalize experiences.
 - **Notifications**: Stay updated on the status of complaints and general announcements.
 
+---
+
 ## Tech Stack
 
 - **Frontend**: React.js
 - **Backend**: Node.js
 - **Database**: MongoDB
 
+---
+
 ## Folder Structure
 
 ```
 swachhata-svecw/
 ├── public/               # Static files
+│   ├── index.html        # Main HTML file
+│   ├── favicon.ico       # App icon
+│   └── assets/           # Other static assets (e.g., images, logos)
 ├── src/                  # Source code
 │   ├── components/       # Reusable components
-│   ├── pages/            # Page components
-│   ├── services/         # API services
-│   └── utils/            # Utility functions
+│   ├── pages/            # Page components (e.g., Dashboard, Report Issue)
+│   ├── services/         # API service handlers
+│   ├── utils/            # Utility/helper functions
+│   ├── App.js            # Main app component
+│   ├── index.js          # React application entry point
+│   └── styles/           # CSS and styling files
+├── .env                  # Environment variables
 ├── package.json          # Project dependencies
-└── README.md             # Project documentation
+├── README.md             # Project documentation
+├── .gitignore            # Git ignore file
+└── node_modules/         # Installed dependencies (auto-generated)
 ```
-```
-## Getting Started
 
-### Prerequisites
+---
 
-Ensure you have the following installed:
-- Node.js
-- npm or yarn
-- MongoDB
+## Installation
 
-### Installation
+Follow these steps to set up the project locally:
 
 1. Clone the repository:
    ```bash
@@ -54,47 +67,17 @@ Ensure you have the following installed:
    ```bash
    npm install
    ```
-
-4. Set up environment variables in a `.env` file:
-   ```
-   MONGO_URI=your-mongodb-connection-string
-   PORT=5000
-   ```
-
-### Running the Application
-
-#### Frontend
-1. Navigate to the `frontend` folder:
-   ```bash
-   cd frontend
-   ```
-2. Start the React development server:
+4. Start the development server:
    ```bash
    npm start
    ```
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-#### Backend
-1. Navigate to the `backend` folder:
-   ```bash
-   cd backend
-   ```
-2. Start the Node.js server:
-   ```bash
-   npm start
-   ```
-3. API will be running at [http://localhost:5000](http://localhost:5000).
-
-### Deployment
-
-For deployment, build the frontend:
-```bash
-npm run build
-```
+---
 
 ## Contributing
 
-We welcome contributions to enhance the project. Follow these steps:
+We welcome contributions to improve **Swachhata@SVECW**. To contribute:
 1. Fork the repository.
 2. Create a new branch:
    ```bash
@@ -102,20 +85,27 @@ We welcome contributions to enhance the project. Follow these steps:
    ```
 3. Commit your changes:
    ```bash
-   git commit -m "Add feature-name"
+   git commit -m "Add feature description"
    ```
-4. Push to the branch:
+4. Push the branch:
    ```bash
    git push origin feature-name
    ```
 5. Open a pull request.
 
+---
+
 ## License
 
-This project is licensed under the MIT License.
-
-## Acknowledgements
-
-Special thanks to the my Team for their support and contribution to this initiative.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
+
+## Contact
+
+For any queries or feedback, feel free to contact:
+- **Email**: ishratnoori18@gmail.com
+- **LinkedIn**:(https://www.linkedin.com/in/ishrat-noori-4b3b70254)
+
+---
+
