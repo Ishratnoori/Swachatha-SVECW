@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+```markdown
+# Swachhata@SVECW
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Swachhata@SVECW is a web platform aimed at promoting cleanliness and sanitation on the campus of Shri Vishnu Engineering College for Women. The platform enables students to report cleanliness issues, track the status of their complaints, and contribute to creating a cleaner and healthier environment.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Report Issues**: Upload photos and details of unclean areas or overflowing dustbins.
+- **Track Complaints**: View the status and progress of reported issues.
+- **Feedback & Suggestions**: Share ideas for improving campus cleanliness.
+- **Profile Management**: Manage user accounts and personalize experiences.
+- **Notifications**: Stay updated on the status of complaints and general announcements.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js
+- **Backend**: Node.js
+- **Database**: MongoDB
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Folder Structure
 
-### `npm test`
+```
+swachhata-svecw/
+├── public/               # Static files
+├── src/                  # Source code
+│   ├── components/       # Reusable components
+│   ├── pages/            # Page components
+│   ├── services/         # API services
+│   └── utils/            # Utility functions
+├── package.json          # Project dependencies
+└── README.md             # Project documentation
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure you have the following installed:
+- Node.js
+- npm or yarn
+- MongoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/swachhata-svecw.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd swachhata-svecw
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Set up environment variables in a `.env` file:
+   ```
+   MONGO_URI=your-mongodb-connection-string
+   PORT=5000
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running the Application
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Frontend
+1. Navigate to the `frontend` folder:
+   ```bash
+   cd frontend
+   ```
+2. Start the React development server:
+   ```bash
+   npm start
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Backend
+1. Navigate to the `backend` folder:
+   ```bash
+   cd backend
+   ```
+2. Start the Node.js server:
+   ```bash
+   npm start
+   ```
+3. API will be running at [http://localhost:5000](http://localhost:5000).
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+For deployment, build the frontend:
+```bash
+npm run build
+```
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We welcome contributions to enhance the project. Follow these steps:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add feature-name"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+Special thanks to the my Team for their support and contribution to this initiative.
+
+---
