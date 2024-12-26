@@ -30,7 +30,7 @@ swachhata-svecw/
 ├── package.json          # Project dependencies
 └── README.md             # Project documentation
 ```
-
+```
 ## Getting Started
 
 ### Prerequisites
