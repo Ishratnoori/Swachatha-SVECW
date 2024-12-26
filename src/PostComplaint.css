@@ -1,0 +1,99 @@
+/* Feedback.css */
+
+/* Outer Container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Simple white background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #ddd;
+}
+
+/* Heading Styles */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #600000; /* Maroon color for heading */
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+/* Label Styles */
+.container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #600000;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Input & Textarea Styles */
+.container input,
+.container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #600000; /* Maroon border */
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container input:focus,
+.container textarea:focus {
+  border-color: #f51515; /* Red border on focus */
+  box-shadow: 0 0 5px rgba(245, 21, 21, 0.3);
+  outline: none;
+}
+
+/* Button Styles */
+.container button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #600000; /* Maroon background */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+  background-color: #f51515; /* Red background on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.container button:active {
+  transform: translateY(0); /* Return to default position on click */
+}
+
+/* Success/Error Message Styles */
+.container .message {
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+}

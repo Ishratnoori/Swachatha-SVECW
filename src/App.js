@@ -1,25 +1,75 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import UserSignup from './UserSignup';
+import UserLogin from './UserLogin';
+import AdminSignup from './AdminSignup';
+import AdminLogin from './AdminLogin';
+import UserDashboard from './UserDashboard';
+import AdminDashboard from './AdminDashboard';
+import PostComplaint from './PostComplaint';
+import Feedback from './Feedback';
+import ViewComplaints from './ViewComplaints';
+import Home from './Home';
+import ViewFeedback from './ViewFeedback';
+import StatusPage from './StatusPage';
+import ViewStatus from './ViewStatus'; // Import Home component
+import blackBackground from './images/black.png'; // Import black background
+import SwachathaEvents from './SwachathaEvents';
+import ViewEvents from './ViewEvents';
 import './App.css';
 
-function App() {
+// Background Wrapper Component
+const BackgroundWrapper = ({ children }) => {
+  const location = useLocation();
+
+  // Conditional background based on the route
+  const isHomePage = location.pathname === '/';
+  const backgroundStyle = {
+    backgroundImage: isHomePage ? 'none' : `url(${blackBackground})`, // Fixed template literal
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    minHeight: '100vh',
+    width: '100%',
+  };
+
+  return <div style={backgroundStyle}>{children}</div>;
+};
+
+// Main App Component
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <BackgroundWrapper>
+        <nav>
+          <ul className="nav-links">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/user/signup">User Signup</Link></li>
+            <li><Link to="/user/login">User Login</Link></li>
+            <li><Link to="/admin/signup">Admin Signup</Link></li>
+            <li><Link to="/admin/login">Admin Login</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/user/signup" element={<UserSignup />} />
+          <Route path="/user/login" element={<UserLogin />} />
+          <Route path="/admin/signup" element={<AdminSignup />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/user/dashboard" element={<UserDashboard />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/post-complaint" element={<PostComplaint />} />
+          <Route path="/view-complaints" element={<ViewComplaints />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/view-feedback" element={<ViewFeedback />} />
+          <Route path="/status" element={<StatusPage />} />
+          <Route path="/viewstatus" element={<ViewStatus />} />
+          <Route path="/swachathaevents" element={<SwachathaEvents />}></Route>
+        <Route path="/viewevents" element={<ViewEvents />}></Route>
+        </Routes>
+      </BackgroundWrapper>
+    </Router>
   );
-}
+};
 
 export default App;
