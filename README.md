@@ -4,7 +4,7 @@
 
 # Swachhata@SVECW
 
-**Swachhata@SVECW** is a web platform aimed at promoting cleanliness and sanitation on the campus of Shri Vishnu Engineering College for Women. The platform enables students to report cleanliness issues, track the status of their complaints, and contribute to creating a cleaner and healthier environment.
+**Swachhata@SVECW** is a web platform aimed at promoting cleanliness on the campus of Shri Vishnu Engineering College for Women. The platform enables students to report cleanliness issues, track the status of their complaints, and contribute to creating a cleaner and healthier environment.
 
 ---
 
