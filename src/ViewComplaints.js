@@ -36,7 +36,7 @@ const ViewComplaints = () => {
   return (
     <div className="view-complaints-container">
       <h1>Complaints</h1>
-      {error && <p className="error">{Server `error: ${error}`}</p>}
+      {error && <p className="error">Server error: {error}</p>}
       <table className="complaints-table">
         <thead>
           <tr>
